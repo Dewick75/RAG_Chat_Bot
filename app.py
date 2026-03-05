@@ -28,8 +28,11 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 # Configuration
 # ============================================================================
 
-# Ensure .files directory exists for Chainlit elements
-os.makedirs(".files", exist_ok=True)
+try:
+    # Ensure .files directory exists for Chainlit elements
+    os.makedirs(".files", exist_ok=True)
+except OSError:
+    print("Warning: Could not create .files directory. Proceeding anyway (likely on a read-only filesystem like Vercel).")
 
 PDF_FOLDER_PATH = "./fin_ed_docs"  # Your PDF documents folder
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
