@@ -1,0 +1,31 @@
+# Environment variables
+.env
+.env.*
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Chainlit specific
+.chainlit/
+.files/
+
+# Vector Stores (FAISS/Chroma caches - usually too large to commit)
+faiss_index/
+*.faiss
+*.pkl
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db

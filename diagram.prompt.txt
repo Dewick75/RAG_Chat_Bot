@@ -1,0 +1,9 @@
+
+Prompt
+A clean, professional, and modern flowchart diagram explaining the Retrieval-Augmented Generation (RAG) architecture. 
+
+The diagram should have two main sections:
+1. 'Initialization Phase' (Left side) showing: PDF Documents flowing into a 'Text Splitter' (chunking), then flowing into an 'Embedding Model', which finally saves to a 'Vector Database' (database icon).
+2. 'Chat/Query Phase' (Right side) showing: User typing a 'Question', which goes into an 'Embedding Model' to become a 'Query Vector'. This vector queries the 'Vector Database', which returns 'Relevant Document Chunks'. These chunks, along with the 'Chat History' and original 'User Question', flow into the 'LLM / Large Language Model' (brain/AI icon). The LLM then generates an 'Answer' that goes back to the User.
+
+Style: minimalist tech style, using cool blues, greens, and purples. Clean lines, rounded boxes, and clear directional arrows. Do not include random illegible text, use clear simple icons for each step instead.
